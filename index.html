@@ -7,7 +7,31 @@
     <title>Password Generator</title>
   </head>
   <body>
-
+  <style>
+    #password{
+      display: block;
+      margin: 1vw;
+    }
+    textarea{
+      height:200px;
+      width:350px;
+    }
+  </style>
+    <h2>Generate a Password</h2>
+    <input type="checkbox" class="check" id = "type1" value="ABCDEFGHIJKLMNOPQRSTUVYXYZ">uppercase
+    <input type="checkbox" class="check" id = "type2" value="abcdefghijklmnopqrstuvwxyz">lowercase
+    <input type="checkbox" class="check" id = "type3" value="!&quot;#$%&'()*+,-./:;=&lt;?&gt;@[\]^_`{|}~">special character
+    <input type="checkbox" class="check" id = "type4" value="1234567890">number
+    <textarea
+      readonly
+      id="password"
+      placeholder="Your Secure Password"
+      aria-label="Generated Password"
+    ></textarea>
+    <button id="generate">Generate Password</button>
+    <button id="copy">
+      Copy to Clipboard
+    </button>
     <script src = "index.js"></script>
   </body>
 </html>
