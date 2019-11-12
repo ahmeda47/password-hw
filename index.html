@@ -16,12 +16,16 @@
       height:200px;
       width:350px;
     }
+    #length{
+      display: block;
+    }
   </style>
     <h2>Generate a Password</h2>
-    <input type="checkbox" class="check" id = "type1" value="ABCDEFGHIJKLMNOPQRSTUVYXYZ">uppercase
-    <input type="checkbox" class="check" id = "type2" value="abcdefghijklmnopqrstuvwxyz">lowercase
-    <input type="checkbox" class="check" id = "type3" value="!&quot;#$%&'()*+,-./:;=&lt;?&gt;@[\]^_`{|}~">special character
-    <input type="checkbox" class="check" id = "type4" value="1234567890">number
+    <input type="text" id="length" placeholder="character length">
+    <input type="checkbox" class="check" value="ABCDEFGHIJKLMNOPQRSTUVYXYZ">uppercase
+    <input type="checkbox" class="check" value="abcdefghijklmnopqrstuvwxyz">lowercase
+    <input type="checkbox" class="check" value="!&quot;#$%&'()*+,-./:;=&lt;?&gt;@[\]^_`{|}~">special character
+    <input type="checkbox" class="check" value="1234567890">number
     <textarea
       readonly
       id="password"
